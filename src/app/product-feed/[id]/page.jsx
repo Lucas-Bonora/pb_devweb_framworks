@@ -115,8 +115,12 @@ const ProductPage = ({params: {id}}) => {
                                    </div>
 
                                     <div>
-                                        <p className="mb-5">
+                                        <p className="mb-3">
                                             Requisições de compras:
+                                        </p>
+
+                                        <p className="text-sm bg-bronzeBg p-1 rounded mb-2 w-fit">
+                                            Status
                                         </p>
 
                                         {cotacoes[fornecedor.id]?.map((cotacao) => (
@@ -124,14 +128,9 @@ const ProductPage = ({params: {id}}) => {
                                             className="text-base mb-5
                                             border border-bronzeBorder
                                             rounded p-2">
-                                                <div className="flex flex-row justify-between mb-2">
-                                                    <p className="">
-                                                        Cotação
-                                                    </p>
-                                                    <p className="text-sm bg-bronzeBg p-1 rounded">
-                                                        Status:
-                                                    </p>
-                                                </div>
+                                                <p className="mb-1">
+                                                    Cotação
+                                                </p>
                                                 <p className="mb-1 text-sm">
                                                     Preço: R${cotacao.valor}
                                                 </p>
